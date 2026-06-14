@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:black;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff0000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff0000;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),
+    rgba(0,0,0,.7)),
+    url('hero.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:70px;
+    color:#ff0000;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff0000;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.products{
+    padding:80px 8%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#151515;
+    border-radius:12px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    color:#ff0000;
+    font-size:20px;
+}
+
+.card button{
+    margin:15px;
+    padding:12px 25px;
+    border:none;
+    background:#ff0000;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+    background:#111;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:black;
+}
