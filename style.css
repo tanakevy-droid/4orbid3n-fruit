@@ -133,3 +133,7 @@ footer{
     padding:40px;
     background:black;
 }
+.logo img {
+    height: 60px;
+    width: auto;
+}
