@@ -133,7 +133,40 @@ footer{
     padding:40px;
     background:black;
 }
-img[src="logo.png"] {
-    height: 50px;
-    width: auto;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background: #000;
 }
+
+.logo img {
+  max-width: 120px; /* was probably 300px+ */
+  height: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none; /* hide desktop nav on mobile */
+  }
+  .menu-btn {
+    display: block; /* show hamburger */
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+    
