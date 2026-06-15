@@ -168,5 +168,29 @@ nav a {
     font-size: 24px;
   }
 }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  min-height: 80vh;
+  padding: 0 5%;
+}
 
+.hero-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* stops it from cropping */
+  max-height: 90vh;
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr; /* stack on mobile */
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 36px; /* smaller on mobile */
+  }
+}
     
